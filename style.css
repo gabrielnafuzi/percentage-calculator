@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header#main-header {
+  width: 100%;
+  height: 60px;
+  background: rgb(104, 98, 218);
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percentageAccounts {
+  max-width: 740px;
+  margin: 30px auto 0;
+  padding: 0 20px;
+}
+
+.percentageAccounts article {
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 26px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.numberBox {
+  padding: 5px 0;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid #6c63ff;
+  font-size: 18px;
+  color: #007ef3;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+.resultBox {
+  color: #c76868;
+}
+
+.calculateButton {
+  background: none;
+  color: #6c63ff;
+  border-radius: 5px;
+  border: 2px solid #6c63ff;
+  padding: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s all ease;
+}
+
+.calculateButton:hover {
+  color: #fff;
+  background: #6c63ff;
+}
+
+.percentImg {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.percentImg img {
+  width: 560px;
+}
+
+@media screen and (max-width: 646px) {
+  .percentageAccounts article {
+    flex-direction: column;
+  }
+
+  .calculateButton {
+    margin-top: 20px;
+  }
+
+  .numberBox {
+    margin-bottom: 6px;
+  }
+
+  .percentImg {
+    display: none;
+  }
+}
