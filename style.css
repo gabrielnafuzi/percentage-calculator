@@ -58,8 +58,8 @@ header#main-header {
 }
 
 .calculateButton {
-  background: none;
-  color: #6c63ff;
+  background: #6c63ff;
+  color: #fff;
   border-radius: 5px;
   border: 2px solid #6c63ff;
   padding: 6px;
@@ -70,8 +70,8 @@ header#main-header {
 }
 
 .calculateButton:hover {
-  color: #fff;
-  background: #6c63ff;
+  color: #6c63ff;
+  background: #fff;
 }
 
 .percentImg {
