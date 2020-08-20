@@ -1,53 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Porcentagem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora de Porcentagem</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <div class="container">
-    <header id="main-header">Calculadora de Porcentagem</header>
-    <div class="percentageAccounts">
-      <article>
-        <div>
-          Quanto é <input type="text" class="a numberBox"> % de <input type="text" class="b numberBox">?
-        </div>
-        <div>
-          <input type="submit" value="Calcular" class="calculateButton firstButton">
-          <input type="text" readonly="readonly" class="numberBox resultBox firstResult">
-        </div>
-      </article>
-      <article>
-        <div>
-          <input type="text" class="c numberBox"> é quantos % de <input type="text" class="d numberBox">?
-        </div>
-        <div>
-          <input type="submit" value="Calcular" class="calculateButton secondButton">
-          <input type="text" readonly="readonly" class="numberBox resultBox secondResult">
-        </div>
-      </article>
-      <article>
-        <div>
-          <input type="text" class="e numberBox"> é <input type="text" class="f numberBox">% de quanto?
-        </div>
-        <div>
-          <input type="submit" value="Calcular" class="calculateButton thirdButton">
-          <input type="text" readonly="readonly" class="numberBox resultBox thirdResult">
-        </div>
-      </article>
+  <body>
+    <div class="container">
+      <header id="main-header">Calculadora de Porcentagem</header>
+      <div class="percentageAccounts">
+        <article>
+          <div>
+            Quanto é <input type="text" class="a numberBox" /> % de
+            <input type="text" class="b numberBox" />?
+          </div>
+          <div>
+            <input
+              type="submit"
+              value="Calcular"
+              class="calculateButton firstButton"
+            />
+            <input
+              type="text"
+              readonly="readonly"
+              class="numberBox resultBox firstResult"
+            />
+          </div>
+        </article>
+        <article>
+          <div>
+            <input type="text" class="c numberBox" /> é quantos % de
+            <input type="text" class="d numberBox" />?
+          </div>
+          <div>
+            <input
+              type="submit"
+              value="Calcular"
+              class="calculateButton secondButton"
+            />
+            <input
+              type="text"
+              readonly="readonly"
+              class="numberBox resultBox secondResult"
+            />
+          </div>
+        </article>
+        <article>
+          <div>
+            <input type="text" class="e numberBox" /> é
+            <input type="text" class="f numberBox" />% de quanto?
+          </div>
+          <div>
+            <input
+              type="submit"
+              value="Calcular"
+              class="calculateButton thirdButton"
+            />
+            <input
+              type="text"
+              readonly="readonly"
+              class="numberBox resultBox thirdResult"
+            />
+          </div>
+        </article>
+      </div>
+      <div class="percentImg">
+        <figure>
+          <img src="percentImg.svg" />
+        </figure>
+      </div>
     </div>
-    <div class="percentImg">
-      <figure>
-        <img src="percentImg.svg">
-      </figure>
-    </div>
-  </div>
-</body>
+  </body>
 
-<script src="app.js"></script>
-
+  <script src="app.js"></script>
 </html>

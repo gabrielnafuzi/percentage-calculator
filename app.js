@@ -11,11 +11,13 @@ function formatNumber(number) {
   if (!Number.isInteger(number)) {
     return number.toFixed(2);
   }
+
+  return number;
 }
 
 firstButton.addEventListener('click', () => {
-  const a = document.querySelector('.a').value;
-  const b = document.querySelector('.b').value;
+  const a = +document.querySelector('.a').value;
+  const b = +document.querySelector('.b').value;
   result = (a * b) / 100;
 
   result = formatNumber(result);
@@ -24,8 +26,8 @@ firstButton.addEventListener('click', () => {
 });
 
 secondButton.addEventListener('click', () => {
-  const c = document.querySelector('.c').value;
-  const d = document.querySelector('.d').value;
+  const c = +document.querySelector('.c').value;
+  const d = +document.querySelector('.d').value;
   result = (c * 100) / d;
 
   result = formatNumber(result);
@@ -34,8 +36,8 @@ secondButton.addEventListener('click', () => {
 });
 
 thirdButton.addEventListener('click', () => {
-  const e = document.querySelector('.e').value;
-  const f = document.querySelector('.f').value;
+  const e = +document.querySelector('.e').value;
+  const f = +document.querySelector('.f').value;
   result = (e / f) * 100;
 
   result = formatNumber(result);
