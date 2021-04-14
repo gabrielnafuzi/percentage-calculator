@@ -11,60 +11,54 @@
     <div class="container">
       <header id="main-header">Calculadora de Porcentagem</header>
       <div class="percentageAccounts">
-        <article>
+        <form class="firstForm">
           <div>
             Quanto é <input type="text" class="a numberBox" /> % de
             <input type="text" class="b numberBox" />?
           </div>
           <div>
-            <input
-              type="submit"
-              value="Calcular"
-              class="calculateButton firstButton"
-            />
+            <button type="submit" class="calculateButton firstButton">
+              Calcular
+            </button>
             <input
               type="text"
               readonly="readonly"
               class="numberBox resultBox firstResult"
             />
           </div>
-        </article>
-        <article>
+        </form>
+        <form class="secondForm">
           <div>
             <input type="text" class="c numberBox" /> é quantos % de
             <input type="text" class="d numberBox" />?
           </div>
           <div>
-            <input
-              type="submit"
-              value="Calcular"
-              class="calculateButton secondButton"
-            />
+            <button type="submit" class="calculateButton secondButton">
+              Calcular
+            </button>
             <input
               type="text"
               readonly="readonly"
               class="numberBox resultBox secondResult"
             />
           </div>
-        </article>
-        <article>
+        </form>
+        <form class="thirdForm">
           <div>
             <input type="text" class="e numberBox" /> é
             <input type="text" class="f numberBox" />% de quanto?
           </div>
           <div>
-            <input
-              type="submit"
-              value="Calcular"
-              class="calculateButton thirdButton"
-            />
+            <button type="submit" class="calculateButton thirdButton">
+              Calcular
+            </button>
             <input
               type="text"
               readonly="readonly"
               class="numberBox resultBox thirdResult"
             />
           </div>
-        </article>
+        </form>
       </div>
       <div class="percentImg">
         <figure>

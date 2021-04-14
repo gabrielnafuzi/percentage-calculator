@@ -1,46 +1,54 @@
-const firstButton = document.querySelector('.firstButton');
-const secondButton = document.querySelector('.secondButton');
-const thirdButton = document.querySelector('.thirdButton');
-const firstResult = document.querySelector('.firstResult');
-const secondResult = document.querySelector('.secondResult');
-const thirdResult = document.querySelector('.thirdResult');
+const firstForm = document.querySelector('.firstForm')
+const secondForm = document.querySelector('.secondForm')
+const thirdForm = document.querySelector('.thirdForm')
+const firstResult = document.querySelector('.firstResult')
+const secondResult = document.querySelector('.secondResult')
+const thirdResult = document.querySelector('.thirdResult')
 
-let result = 0;
+console.log(firstForm, secondForm, thirdForm)
+
+let result = 0
 
 function formatNumber(number) {
   if (!Number.isInteger(number)) {
-    return number.toFixed(2);
+    return number.toFixed(2)
   }
 
-  return number;
+  return number
 }
 
-firstButton.addEventListener('click', () => {
-  const a = +document.querySelector('.a').value;
-  const b = +document.querySelector('.b').value;
-  result = (a * b) / 100;
+firstForm.addEventListener('submit', event => {
+  event.preventDefault()
 
-  result = formatNumber(result);
+  const a = +document.querySelector('.a').value
+  const b = +document.querySelector('.b').value
+  result = (a * b) / 100
 
-  firstResult.value = result;
-});
+  result = formatNumber(result)
 
-secondButton.addEventListener('click', () => {
-  const c = +document.querySelector('.c').value;
-  const d = +document.querySelector('.d').value;
-  result = (c * 100) / d;
+  firstResult.value = result
+})
 
-  result = formatNumber(result);
+secondForm.addEventListener('submit', event => {
+  event.preventDefault()
 
-  secondResult.value = `${result}%`;
-});
+  const c = +document.querySelector('.c').value
+  const d = +document.querySelector('.d').value
+  result = (c * 100) / d
 
-thirdButton.addEventListener('click', () => {
-  const e = +document.querySelector('.e').value;
-  const f = +document.querySelector('.f').value;
-  result = (e / f) * 100;
+  result = formatNumber(result)
 
-  result = formatNumber(result);
+  secondResult.value = `${result}%`
+})
 
-  thirdResult.value = result;
-});
+thirdForm.addEventListener('submit', event => {
+  event.preventDefault()
+
+  const e = +document.querySelector('.e').value
+  const f = +document.querySelector('.f').value
+  result = (e / f) * 100
+
+  result = formatNumber(result)
+
+  thirdResult.value = result
+})
